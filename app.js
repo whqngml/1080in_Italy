@@ -23,9 +23,9 @@ app.get("/", function (request, response) {
   response.render("main");
 });
 
-app.get("/sights", function(request, response){
-  response.render('sights');
-})
+app.get("/sights", function (request, response) {
+  response.render("sights");
+});
 //성당
 app.get("/florence", function (request, response) {
   response.render("florence"); //피렌치
@@ -106,5 +106,5 @@ app.get("/pageWeather", function (request, response) {
 
 //로컬 서버 동작
 app.listen(PORT, function () {
-  console.log(`Listening on port ${PORT}`);
+  console.log(`http://localhost:${PORT}`);
 });
