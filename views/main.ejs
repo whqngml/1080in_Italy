@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1080 in Italy</title>
+
+    <!-- CDN Link (css) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+    <!-- ICON (css) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/image/favicon-32x32.png" />
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="https://kit.fontawesome.com/27b083970c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- 상단 nav바 -->
+
+    <%- include('navbar.ejs')%>
+
+        <!-- 메인박스 -->
+        <!-- 메인 사진 -->
+
+        <div id="carouselExampleControls" class="carou carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/image/colosseum.jpg" class="mainPic" alt="콜로세움">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/image/florence.jpg" class="mainPic" alt="피렌체">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/image/rome_center.jpg" class="mainPic" alt="베드로성당">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/image/rome.jpg" class="mainPic" alt="포로로마노">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/image/venice.jpg" class="mainPic" alt="베니스">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>`
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- 검색상자 -->
+
+        <div class="contentBox">
+            <div class="serBox">
+                <form id="search-form">
+                    <div class="searchKeyBox">
+                        <input type='text' placeholder="키워드를 입력해주세요" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = '키워드를 입력해주세요'" class="searchInput">
+                        <div class="keywordBox hidden">
+                            # 이탈리아<br>
+                            # 대표 음식<br>
+                            # 피렌체 대성당 <br>
+                            # 날씨 <br>
+                            # 콜로세움
+                        </div>
+                    </div>
+                    <button class="search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- 탭메뉴 -->
+
+            <div class="tabMenu">
+
+                <!-- 관광지/음식 순위 -->
+
+                <button class="spotBtn ranBtn cliBtn">스팟</button>
+                <button class="celebBtn ranBtn unCliBtn">인물</button>
+                <button class="artBtn ranBtn unCliBtn">작품</button>
+                <div class="subTabMenu">
+                    <div class="spotGrims grimsTab">
+                        <div class="tabGrims">
+                            <div class="grimdiv">
+                                <img src="/static/image/pisa.jpeg" class="themaGrim" alt="피사의 사탑">
+                                <div class="tabGrimDesc d-flex align-items-center">
+                                    <div>피사의 사탑<br><br>
+                                        기울어진 탑으로 유명하다. 착공 시에는 수직이었으나 그 후 탑의 기울어짐이 발견되었다.
+                                        중세의 세계 7대 불가사의 중 하나로 불리고 있다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grimdiv">
+                                <img src="/static/image/emanuel.jpg" class="themaGrim" alt="에마누엘레">
+                                <div class="tabGrimDesc d-flex align-items-center">
+                                    <div>
+                                        비토리오 에마누엘레 2세 갤러리아<br><br>
+                                        밀라노에 있는 쇼핑 센터.
+                                        네오 르네상스 양식으로 지어졌으며 오래된 상점이 있는 이 센터는 세계 쇼핑 센터의 첫 번째 사례 중 하나다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grimdiv">
+                                <img src="/static/image/trevi.jpg" class="themaGrim" alt="트레비">
+                                <div class="tabGrimDesc d-flex align-items-center">
+                                    <div>
+                                        트레비 분수<br><br>
+                                        세계에서 가장 유명한 분수다.
+                                        이 분수에 동전을 던지면 사랑하는 사람과 함께 할 수 있다는 속설 덕분에 전세계 커플들이 찾아온다고 한다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="celebGrims grimsTab hidden">
+                        <div class="tabGrims">
+                            <div class="grimdiv">
+                                <img src="/static/image/dante.jpg" class="themaGrim" alt="단테">
+                                <div class="tabGrimDesc d-flex align-items-center">
+                                    <div>
+                                        단테 알리기에리<br><br>
+                                        이탈리아 역사상 가장 위대한 작가이자 서양사에 한 획을 그은 인물.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grimdiv">
+                                <img src="/static/image/leonardo_davinchi.jpg" class="themaGrim" alt="레오나르도 다빈치">
+                                <div class="tabGrimDesc d-flex align-items-center">
+                                    <div>
+                                        레오나르도 다빈치<br><br>
+                                        화가, 조각가, 과학자 등 다재다능한 천재이며 다방면에서 두루 활약했다.
+                                        많은 작품들을 남겼으며 대표작 '모나리자' '최후의 만찬'은 세계적으로 유명하다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grimdiv">
+                                <img src="/static/image/pavarotti.jpg" class="themaGrim" alt="파바로티">
+                                <div class="tabGrimDesc d-flex align-items-center">
+                                    <div>
+                                        루치아노 파바로티<br><br>
+                                        이탈리아 모데나 출생의 테너. 플라시도 도밍고, 호세 카레라스와 더불어 3대 테너라고 불렸다.
+                                        그가 공연했던 작품들은 대부분 좋은 평을 받았다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artGrims grimsTab hidden">
+                        <div class="tabGrims">
+                            <div class="grimdiv">
+                                <img src="/static/image/davide.jpg" class="themaGrim" alt="다비드상">
+                                <div class="tabGrimDesc d-flex align-items-center">
+                                    <div>
+                                        다비드상<br><br>
+                                        이탈리아 예술의 거장인 미켈란젤로의 작품으로 다윗을 조각한 것이다.
+                                        당시에도 극찬을 받았고 현재까지도 그 가치를 인정받고 있다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grimdiv">
+                                <img src="/static/image/monariza.jpg" class="themaGrim" alt="모나리자자">
+                                <div class="tabGrimDesc d-flex align-items-center">
+                                    <div>
+                                        모나리자<br><br>
+                                        레오나르도 다 빈치의 대표작으로 현재 루브르 박물관에 전시되어 있다.
+                                        모나리자는 전 세계에서 가장 유명한 미술품이자 가장 가치있는 미술품이다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grimdiv">
+                                <img src="/static/image/pinokio.jpg" class="themaGrim" alt="피노키오">
+                                <div class="tabGrimDesc d-flex align-items-center">
+                                    <div>
+                                        피노키오<br><br>
+                                        이탈리아 출신 작가 카를로 콜로디가 1883년 발표한 동화와 그 동화에 나오는 나무인형 주인공의 이름이다.
+                                        세계적으로 유명한 동화 중 하나다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simbolDiv">
+                <img class="simbol moneySimbol" src="/static/image/money.png" alt="심볼로고">
+                <img class="simbol ticketSimbol" src="/static/image/ticket.png" alt="심볼로고">
+                <img class="simbol logoSimbol" src="/static/image/simbolLogo.png" alt="심볼로고">
+                <img class="simbol weatherSimbol" src="/static/image/weather.png" alt="심볼로고">
+                <img class="simbol reviewSimbol" src="/static/image/review.png" alt="심볼로고">
+            </div>
+
+            <!-- 축제 페이지 -->
+
+            <div class="fstvBox">
+                <div class="fstvDiv fstvEvt fstvAni">
+                    <img src="/static/image/festival.jpg" class="fstvImg" alt="축제">
+                    <div class="fstvText">
+                        <div class="icons">
+                            <i class="fa-solid fa-masks-theater"></i>
+                        </div>
+                        축제
+                    </div>
+                </div>
+                <div class="fstvBtn hidden fstvBtn-1"></div>
+                <div class="fstvDesc hidden">
+                    <div class="fstvDescInner d-flex align-items-center">
+                        <div>
+                            베네치아 카니발은 이탈리아 베네치아에서 열리는 세계 10대 축제 중 하나로
+                            사순절의 시작을 알리는 재의 수요일 전 날까지 10일동안 열린다.
+                            브라질 리우 카니발, 프랑스 니스 카니발과 함께 세계 3대 카니발로 손꼽히며
+                            특징은 화려한 의상과 가면을 착용한다는 점이다.
+                            베네치아 카니발은 중세시기 베네치아 공화국이 전쟁에서 승리한 것을 기념하기 위해
+                            축제를 연 것이 시초이며 르네상스 시대에 군주들의 후원으로 인해 규모가 커지고
+                            더욱 더 화려해졌다.
+                            카니발 기간에는 전쟁을 상징하는 불꽃놀이와 전투를 상징하는 무어인의 춤,
+                            심판을 상징하는 황소 목 자르기, 평화를 상징하는 천사의 비행, 단결을 상징하는 인간탑 쌓기
+                            프로그램이 진행되고 마지막 날에는 가면과 의상을 선보이는 아름다운 가면 경연대회와 함께
+                            무도회가 개최되어 참가한 사람들 모두가 즐길 수 있다.
+                            가면의 종류로는 크게 눈, 코와 턱 윗부분만 가리는 반쪽 가면인 콜롬비나,
+                            새처럼 긴 부리가 특징인 메디코 델라 페스테, 고양이 얼굴 가면인 가토 가 있다.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fstvDiv fstvEvt fstvAni">
+                    <img src="/static/image/fashion.jpg" class="fstvImg" alt=축제">
+                    <div class="fstvText">
+                        <div class="icons">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+                        패션
+                    </div>
+                </div>
+                <div class="fstvBtn hidden fstvBtn-2"></div>
+                <div class="fstvDesc hidden">
+                    <div class="fstvDescInner d-flex align-items-center">
+                        <div>
+                            이탈리아는 세계 디자인의 수도라고 불릴 정도로 세계적으로 디자인을 선도하고 있는 국가이다.
+                            밀라노, 피렌체, 로마 등의 대도시들은 이탈리아의 패션 수도라고 불리며 구찌, 아르마니, 베르사체, 프라다, 발렌티노, 돌체앤가바나 등의 명품 브랜드들은 세계적으로
+                            유명하며
+                            이탈리아에서 발행되는 패션 잡지인
+                            보그 이탈리아는 세계에서 가장 권위있는 패션 잡지로 평가받는다.
+                            이탈리아는 패션 뿐만 아니라 디자인 면에서도 세계 최고 수준을 자랑하는데 특히 건축 디자인, 산업 디자인, 도시 설계 등에 강세를 보이고 있다. 이탈리아는 지오
+                            폰테,
+                            에토레 소트사스 같은 유명한 가구
+                            디자이너들을 배출하였으며 이탈리아 단어인 ‘벨 디세그노’나 ‘리니아 이탈리아나’는 가구 디자인의 용어로 아예 공식적으로 통용될 정도이다.
+                            자동차 역시 유명한데 사람들이 익히 알고있는 슈퍼카 브랜드인 페라리와 람보르기니, 파가니를 비롯하여 마세라티 알파로메오 란치아 피아트 두카티 등 디자인과 성능면에서
+                            찬사를
+                            받는 걸작들이 이탈리아에서 만들어지고 있다.
+                        </div>
+                    </div>
+                </div>
+                <div class="fstvDiv fstvEvt fstvAni">
+                    <img src="/static/image/soccer.jpg" class="fstvImg" alt=축제">
+                    <div class="fstvText">
+                        <div class="icons">
+                            <i class="fa-regular fa-futbol"></i>
+                        </div>
+                        축구
+                    </div>
+                </div>
+                <div class="fstvBtn hidden fstvBtn-3"></div>
+                <div class="fstvDesc hidden">
+                    <div class="fstvDescInner d-flex align-items-center">
+                        <div>
+                            이탈리아 축구 국가대표팀은 FIFA 월드컵 역사상 가장 많은 성공을 거둔 국가 중 하나로 FIFA 월드컵 우승을 4번 했으며 UEFA 유럽 축구 선수권 대회도 2차례
+                            우승한
+                            전적이 있다.
+                            국가대표팀의 별칭은 이 아주리로 이탈리아 국가대표팀과 이탈리아 선수단들의 유니폼 색상에서 유래하였다. 아주리라는 이탈리아어 단어의 유래는 사보이아의 푸른색에서
+                            유래하였는데
+                            사보이아는 1861년에 이탈리아 왕국을 통일시킨 가문으로 현재 이탈리아의 대통령 공식적 상징으로도 계속 사용되고 있다.
+                            유명한 선수로는 부폰, 피를로, 말디니, 키엘리니, 마르키시오, 인자기, 데로시, 네스타, 델피에로, 가투소 등등 포지션을 불문하고 각 시대를 풍미한 선수들이
+                            이탈리아에서
+                            배출되고 있다.
+                            이탈리아의 축구리그는 세리에A로 최고의 수준을 갖추어 세계 최고의 리그로 우뚝섰고 최근 우리나라의 김민재 선수가 세리에A팀 나폴리에 이적해서 활약하고 있다.
+                            또 하나의 특이점은 이탈리아의 나라 모양이 신발을 신은 다리모양이고 시칠리아 섬이 공 모양이라서 이탈리아 축구가 강하다는 속설이 있다.
+                        </div>
+                    </div>
+                </div>
+                <div class="fstvDiv fstvEvt fstvAni">
+                    <img src="/static/image/study.jpg" class="fstvImg" alt=축제">
+                    <div class="fstvText">
+                        <div class="icons">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </div>
+                        교육
+                    </div>
+                </div>
+                <div class="fstvBtn hidden fstvBtn-4"></div>
+                <div class="fstvDesc hidden">
+                    <div class="fstvDescInner d-flex align-items-center">
+                        <div>
+                            이탈리아에서 교육은 자유이나 6세에서 16세까지는 의무교육이다. 학년은 9월부터 6월까지로 총 3학기제이다. 중학교 과정을 이수한 이후에는 고등학교로 진학하는데
+                            고등학교를 우수한 성적으로 마쳤을 경우에는
+                            대학교로 진학하여 대학 교육을 받을 수 있다. 초등학교 과정동안, 학생들은 기본적 소양을 배운다. 2012년에 이탈리아의 고등학생들은 OECD의 평균보다 약간 낮은
+                            성적를 기록하였다.
+                            다만 과학과 수학 분야에서는 2003년 이래 꾸준히 증가해오고 있는 추세이다. 1088년에 세워진 세계 최초의 대학인 볼로냐 대학교를 비롯해 로마 라 사피엔차
+                            대학교,산타 체칠리아 국립음악원,
+                            밀라노 베르디 국립음악원 등 유서 깊은 명문학교가 많은 나라다. 예술 분야에서는 유학을 갈 국가를 정할 때 이탈리아를 먼저 생각할 정도로 유명하다. 예술에 대한 존중
+                            의식도 깊기 때문에 이탈리아에서 교육을 받은 예술가들은
+                            예술 작품의 표현 성향이 꽤나 자유로운 편이다. 우리나라에서도 디자인과 클래식 음악, 고전미술, 요리 등 예술 분야를 전공하는 학생들이 유학을 생각할때 첫번쨰로
+                            고려하는 나라이며 학비는 우리나라보다 조금 비싼 편이다.
+                        </div>
+                    </div>
+                </div>
+                <div class="fstvDiv fstvEvt fstvAni">
+                    <img src="/static/image/media.jpg" class="fstvImg" alt=축제">
+                    <div class="fstvText">
+                        <div class="icons">
+                            <i class="bi bi-camera-reels-fill"></i>
+                        </div>
+                        미디어
+                    </div>
+                </div>
+                <div class="fstvBtn hidden fstvBtn-5"></div>
+                <div class="fstvDesc hidden">
+                    <div class="fstvDescInner d-flex align-items-center">
+                        <div>
+                            수많은 대중매체에서 이탈리아를 찾아볼 수 있다. 고대 로마시대 검투사의 삶과 귀족들의 향락을 잘 보여주는 글레디에이터와 스파르타쿠스는 우리나라에서도 아주 유명해서
+                            많은
+                            사람들이 시청했다.
+                            로마의 휴일은 로맨틱 코미디의 고전으로 알려진 영화이다. 세계적으로 흥행도 성공했지만 특히 동아시아에서 인기를 끌었고 세월이 지나도 인기가 엄청났다.
+                            이 영화의 영향력은 엄청나서 영화에 나왔던 진실의 입, 스페인 광장 젤라또는 현재도 많은 관광객이 찾을 정도다.
+                            천사와 악마 역시 바티칸과 로마를 배경으로 해서 아름다운 대성당과 건축물 그리고 로마의 시내 풍경을 영화 곳곳에서 찾아볼 수 있다.
+                            베니스의 상인은 윌리엄 셰익스피어가 악독한 유대인에게 큰 빚을 진 16세기 한 베네치아 상인에 관해 쓴 희극이다. 다른 셰익스피어의 로맨틱 코미디극과 다르게 희극으로
+                            분류하면서도
+                            비극적인 면이 있으며 자비심에 대한 교훈도 준다. 영화로도 만들어졌는데 베네치아의 아름다운 명소들과 당시의 시대상들에 대한 고증이 상당히 잘 이루어져 있다고
+                            평가받았다.
+                            로미오와 줄리엣은 윌리엄 셰익스피어의 초기 희곡이다. 서로 원수인 가문에서 태어난 로미오와 줄리엣이 사랑을 하게 되고 그들의 비극적인 죽음이 가문을 화해하게 만드는
+                            이야기이다.
+                            아름다운 대사와 극적 효과로 많은 칭송을 받는 셰익스피어의 대표작 가운데 하나이다. 극의 배경은 베로나인데 이곳에는 줄리엣의 집과 동상이 존재하여 전세계의 커플들이
+                            몰려드는
+                            인기 관광지로 자리매김했다.
+                        </div>
+                    </div>
+                </div>
+                <i class="bi bi-pin-fill fstvBack fstvBack-1"></i>
+                <i class="bi bi-pin hidden fstvBack fstvBack-2"></i>
+            </div>
+        </div>
+        <%- include('footer.ejs')%>
+
+            <!-- Jquey/BootStrap -->
+
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+                integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+            <script src="/static/js/main.js"></script>
+            <script src="/static/js/nav.js"></script>
+            <script src="/static/js/footer.js"></script>
+</body>
+
+</html>

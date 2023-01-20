@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'twayair';
+}
+
+p {
+    text-align: center;
+}
+
+/*container*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#topPosit {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+}
+
+#citySelect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#citySelect #city option {
+    text-align: center;
+}
+
+#city {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+#contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#cityNameDay #cityName,
+.cityDay {
+    text-align: center;
+}
+
+#btnMaxMin {
+    width: 80%;
+    background-color: #FCEDF1;
+    border-radius: 25px;
+    padding: 5px 7px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#btnMaxMin .btn {
+    background-color: #FCEDF1;
+    border: 1px solid #FCEDF1;
+    border-radius: 25px;
+}
+
+#weatherImg {
+    margin: 0 auto;
+}
+
+#weatherImg img {
+    width: 230px;
+    height: 140px;
+}
+
+#resultbtn {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 30vw;
+    height: 10vh;
+    color: white;
+}
+
+#weatherInfo {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#weatherInfo .two {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weatherInfo img {
+    width: 45px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+#weatherInfo #weatherTemp img {
+    padding-right: 7px;
+}
+
+#weatherInfo .water {
+    padding-left: 7px;
+}
+
+#weatherInfo #weatherTemp {
+    width: 35%;
+    height: 80%;
+    border-radius: 10px;
+    margin: auto 10px;
+    background-color: #00CEFF;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+}
+
+#weatherInfo #weatherHumidity {
+    width: 35%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#weatherInfo #weatherWind {
+    width: 35%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#weatherInfo #weatherCloud {
+    width: 35%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#weatherInfo .boxTop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#weatherInfo .boxTop .tempMaxMinName {
+    font-size: 15px;
+    text-align: center;
+}
+
+#weatherInfo .left {
+    margin-left: 13px;
+}
+
+#weatherInfo .boxTop span {
+    text-align: center;
+    font-size: 20px;
+}
+
+#weatherInfo .weatherposit {
+    padding-left: 5px;
+}

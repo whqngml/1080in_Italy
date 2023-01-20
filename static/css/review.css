@@ -1,0 +1,366 @@
+@font-face {
+  font-family: "MICEGothic Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MICEGothic Bold";
+}
+
+/* 폼 전체 */
+
+.wrap {
+  width: 90vw;
+  margin-top: 8vh;
+  background-color: #ffffff;
+  margin-bottom: 5vh;
+  padding: 5vh 5vw 1vh 5vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 1;
+}
+
+.outer {
+  width: 100%;
+  min-width: 500px;
+  margin-right: 10px;
+}
+
+.card {
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 20rem;
+  height: 20rem;
+}
+
+.reviewPic {
+  height: 30vh;
+  width: 100%;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 13px 0 0 0;
+  width: 100%;
+  background-color: #3d8361;
+  border-radius: 15px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px #c64251;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+}
+
+#nickname {
+  width: 120px;
+}
+
+.nn {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  height: 160px;
+  width: 20%;
+}
+
+.icon {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  font-size: 60px;
+  padding-bottom: 30px;
+  border-radius: 50%;
+}
+
+.ni {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 15px;
+}
+
+.rerabu {
+  position: relative;
+  width: 80%;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.re {
+  flex: 1 1 auto;
+  padding: 16px 16px 0 16px;
+  height: 115px;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+#review {
+  padding-left: 10px;
+  height: 14vh;
+}
+
+.rabu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.enter {
+  background: #3d8361;
+  width: 100px;
+  border: 2px solid #c64251;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* 별점 관련 */
+
+.rating .rate_radio + label {
+  position: relative;
+  display: inline-block;
+  margin-left: -4px;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  background-image: url("/static/img/starrate.png");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+.rating .rate_radio:checked + label {
+  background-color: #f9bc6c;
+}
+
+/* 체크박스 안보이게 */
+
+[type="checkbox"] {
+  display: none;
+}
+
+/* 리뷰전체 칸 */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: -300px;
+  margin-bottom: 50px;
+}
+
+/* 개인 리뷰칸 */
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+  border-color: #3d8361;
+  margin-top: 2vh;
+}
+
+/* 닉네임칸 */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 0 0 auto;
+  width: 30%;
+  align-items: center;
+  border-right: thin dotted #3d8361;
+  border-bottom: 0;
+  border-top: 0;
+  border-left: 0;
+}
+
+/* div 위치 확인용 */
+.nickname {
+  font-weight: bold;
+}
+
+.textreview {
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+.stars {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.dates {
+  padding-left: 10px;
+}
+
+.icon2 {
+  font-size: 30px;
+}
+
+/* 리뷰,별점,작성일 칸 */
+
+.right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.side {
+  font-size: 0.8rem;
+}
+
+.stars img {
+  width: auto;
+  height: auto;
+}
+
+.bot {
+  display: flex;
+  flex-direction: row;
+}
+
+.deleteBtn {
+  margin-left: 25px;
+  background: #c64251;
+  width: 100px;
+  border: 2px solid #3d8361;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+}
+
+/* 미디어쿼리 */
+
+@media (max-width: 990px) {
+  .wrap {
+    flex-direction: column;
+  }
+
+  .comment {
+    flex-direction: column;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+
+  .icon {
+    flex-direction: column;
+  }
+
+  .ni {
+    flex-direction: column;
+    padding-bottom: 30px;
+    align-items: center;
+  }
+
+  .rabu {
+    flex-direction: column;
+  }
+
+  .reviews {
+    flex-direction: column;
+    width: 134%;
+  }
+
+  .nn {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .icon1 {
+    padding-bottom: 0px;
+  }
+
+  .rerabu {
+    width: 100%;
+  }
+
+  .rating {
+    text-align: center;
+  }
+
+  .list {
+    margin-left: -167px;
+  }
+
+  .left {
+    flex-direction: row;
+    border-right: 0;
+    margin-left: 20px;
+  }
+
+  .nickname {
+    padding-left: 20px;
+  }
+
+  .right {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: thin dotted #3d8361;
+    border-left: 0;
+  }
+
+  .stars {
+    width: 30%;
+    padding-left: 50px;
+  }
+
+  .textreview {
+    padding-left: 50px;
+  }
+
+  .dates {
+    padding-left: 50px;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    display: none;
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카프리</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 파비콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/image/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/capri.css" />
+  </head>
+  <body>
+    <%- include('navbar.ejs')%>
+
+    <div id="contents">
+      <div id="bigImg">
+        <img src="/static/img/capri.jpg" />
+      </div>
+
+      <div id="btn4">
+        <a href="#box1"><span>카프리섬은?</span></a>
+        <a href="#box2"><span>카프리섬의 특징</span></a>
+      </div>
+
+      <div id="box1" class="box">
+        <div id="box1Img">
+          <img src="/static/img/capri7.jpg" />
+        </div>
+
+        <div id="msg">
+          <h2>카프리섬은?</h2>
+
+          <div class="pFour">
+            <div class="twop">
+              <p>
+                카프리 섬은 소렌토나 나폴리 포지타노에서 배를 타고 갈 수 있다.
+              </p>
+
+              <p>
+                섬 전체는 용암으로 뒤덮여 있으며 온난한 기후와 아름다운 풍경의
+                관광지로 유명하다.
+              </p>
+            </div>
+
+            <div class="twop">
+              <p>
+                카프리 섬은 이탈리아 남부 캄파니아주 나폴리 광역시에 딸린 섬으로
+                나폴리만 입구, 소렌토반도 앞바다에 위치한다.
+              </p>
+
+              <p>
+                카프리섬의 동쪽과 중앙은 카프리에 속하며 서쪽은 아나카프리에
+                속한다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="box2" class="box">
+        <div id="test">
+          <div id="write">
+            <h2 class="red">
+              이탈리아 카프리 섬 해안에 있는 유명한 해식 동굴, 푸른 동굴
+            </h2>
+          </div>
+
+          <div class="box2Div3">
+            <p>
+              이탈리아 남부 캄파니아주 나폴리 광역시에 딸린 섬으로<br />
+              섬 전체는 용암으로 뒤덮여 있으며, 온난한 기후와 아름다운 풍경의
+              관광지로 유명하다.
+            </p>
+
+            <p>
+              특히 로마 시대부터 알려진 ‘푸른 동굴’은 길이 53m, 너비 30m, 높이
+              15m의 해식동굴인데<br />
+              햇빛이 바닷물을 통해서 동굴 안을 푸른빛으로 채운다.
+            </p>
+
+            <div class="box2button">
+              <a
+                href="https://www.google.com/search?q=%EC%B9%B4%ED%94%84%EB%A6%AC%EC%84%AC+%EC%A7%80%EB%8F%84&ei=fKVYY5LFIJLL2roP8ciD6As&ved=0ahUKEwiS8_2Y9vz6AhWSpVYBHXHkAL0Q4dUDCA8&uact=5&oq=%EC%B9%B4%ED%94%84%EB%A6%AC%EC%84%AC+%EC%A7%80%EB%8F%84&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQogQyBQgAEKIEOgoIABBHENYEELADOgQIABBDOgUIABCABDoFCC4QgARKBAhBGABKBAhGGABQYViiGWDVGmgIcAB4AIABpAGIAc0NkgEEMC4xM5gBAKABAcgBCsABAQ&sclient=gws-wiz-serp"
+                target="_blank"
+              >
+                <button class="colorbtn">자세히 보기</button>
+              </a>
+
+              <a
+                href="https://ko.wikipedia.org/wiki/%EC%B9%B4%ED%94%84%EB%A6%AC%EC%84%AC"
+                target="_blank"
+              >
+                <button>관련 설명</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="box3Img">
+          <div class="twoImg first">
+            <img src="/static/img/capri7.jpg" />
+            <img src="/static/img/capri8.jpg" />
+          </div>
+
+          <div class="twoImg second">
+            <img src="/static/img/capri9.jpg" />
+            <img src="/static/img/capri10.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('footer.ejs')%>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="/static/js/nav.js"></script>
+    <script src="/static/js/footer.js"></script>
+
+    <script src="/static/js/capri.js"></script>
+  </body>
+</html>

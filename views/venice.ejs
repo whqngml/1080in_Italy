@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베네치아</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+
+    <link rel = "stylesheet" href = "/static/css/capri.css">
+</head>
+<body>
+    <%- include('navbar.ejs')%>
+
+    <div id = "contents">
+
+        <div id = "bigImg">
+            <img src = "/static/img/venice3.jpg">
+        </div>
+
+        <div id = "btn4">
+            <a href = "#box1"><span>베네치아는?</span></a>
+            <a href = "#box2"><span>베네치아의 특징</span></a>
+        </div>
+
+            <div id = "box1" class = "box">
+
+                <div id = "box1Img">
+                    <img src = "/static/img/vene.jpg">
+                </div>
+                
+
+                <div id = "msg">
+                    <h2>베네치아는?</h2>
+
+                    <div class = "pFour">
+
+                        <div class = "twop">
+                            <p>
+                                베네치아는 이탈리아 북부에 위치하고 있다. 세계적 관광지이며 수상 도시이자 운하의 도시로도 유명하다.
+                            </p>
+    
+                            <p>
+                                베네치아는 중세와 르네상스 기간 동안 유럽의 해상무역과 금융의 중심지였다. 
+                            </p>
+                        </div>
+
+                        <div class = "twop">
+                            <p>
+                                베네치아의 도심은 베네치아 석호 안쪽에 흩어져 있는 118개의 섬들이 약 400개의 다리로 이어져 있는 구조로 되어있다.
+                            </p>
+    
+                            <p>
+                                비단, 향료, 밀을 거래하는 주요 창구였고 이로 인해 유럽에서 가장 부유한 도시들 중 하나였다.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id = "box2" class = "box">
+
+                <div id = "test">
+
+                    <div id = "write">
+                        <h2 class = "red">물의 도시, 베네치아</h2>
+                    </div>
+
+                    <div class = "box2Div3">
+                        <p>
+                            베네치아는 오스트리아에 합병되었고 1866년에 이탈리아가 통일되며 이탈리아로 돌아오게 되었다.<br>
+                            베네치아는 세계에서 가장 아름다운 도시들 중 하나로 꼽힌다. 
+                        </p>
+
+                        <p>
+                            베네치아의 아름다움은 중세부터 유명했고 물의 도시, 아드리아해의 여왕, 가면의 도시 등 다양한 별명들을 가지고 있다.<br>
+                            시대에 문화 발전의 중심지 역할을 하였으며 유명한 작곡가 안토니오 비발디의 고향이다. 
+                        </p>
+
+                        <div class = "box2button">
+                            <a href = "https://www.google.com/search?q=%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84+%EC%A7%80%EB%8F%84&ei=_KVYY72lJtCP-Ab6rqGQBQ&ved=0ahUKEwi9k4jW9vz6AhXQB94KHXpXCFIQ4dUDCA8&uact=5&oq=%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84+%EC%A7%80%EB%8F%84&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBggAEAgQHjIICAAQCBAeEA8yBggAEAUQHjoKCAAQRxDWBBCwAzoFCC4QgAQ6BAgAEEM6BAguEEM6BwguENQCEENKBAhBGABKBAhGGABQuQFYjgZgnAdoAXAAeACAAZgBiAGjBZIBAzAuNZgBAKABAcgBCsABAQ&sclient=gws-wiz-serp" target = "_brank">
+                                <button class = "colorbtn">자세히 보기</button>
+                            </a>
+                            
+                            <a href = "https://ko.wikipedia.org/wiki/%EB%B2%A0%EB%84%A4%EC%B9%98%EC%95%84" target = "_brank">
+                                <button>관련 설명</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id = "box3Img">
+                    
+                    <div class = "twoImg first">
+                        <img src = "/static/img/venice1.jpg">
+                        <img src = "/static/img/venice2.jpg">
+                    </div>
+
+
+                    <div class = "twoImg second">
+                        <img src = "/static/img/venice3.jpg">
+                        <img src = "/static/img/venice4.jpg">
+                    </div>
+                </div>
+            </div>
+
+        
+
+
+    </div>
+    <%- include('footer.ejs')%>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+                integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="/static/js/nav.js"></script>
+    <script src ="/static/js/footer.js"></script>
+
+
+    <script src = '/static/js/capri.js'></script>
+
+</body>
+</html>

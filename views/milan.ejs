@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밀라노</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+   
+    <link rel = "stylesheet" href = "/static/css/florence.css">
+</head>
+<body>
+    <%- include('navbar.ejs')%>
+
+    <div id = "contents">
+
+        <div id = "bigImg">
+            <img src = "/static/img/milan1.jpg">
+        </div>
+
+        <div id = "btn4">
+            <a href = "#box1"><span>밀라노 대성당의 역사</span></a>
+            <a href = "#box2"><span>건축양식에 대하여</span></a>
+            <a href = "#box3"><span>완공당시</span></a>
+            <a href = "#explain"><span>밀라노의 다른 모습들</span></a>
+            <a href = "#exhibit"><span>밀라노 사진전</span></a>
+        </div>
+
+        <div id = "threeBox">
+
+            <div id = "box1" class = "box">
+                <img src = "/static/img/milan3.jpg" alt = "이미지1">
+
+                <div class = "msg">
+                    <h2>밀라노 대성당의 역사</h2>
+
+                    <p class = "smallw">밀라노 대성당의 역사에 대해서</p>
+
+                    <p>
+                        1386년 안토니오 다 살루초 대주교가 이탈리아보다는 프랑스에서 보편적이었던 후기 고딕 양식인 라요낭(rayonnant) 양식으로 건설을 시작하였다.
+                        대성당 건설은 대주교의 사촌인 잔 갈레아초 비스콘티가 밀라노에서 권력을 잡을 시기에 시작되었고, 
+                        이는 비스콘티 가문의 전임자였던 바르나보 비스콘티의 폭정에 대한 귀족과 노동 계급에 대한 보상을 의미했다.
+                        실제 작업이 시작되기 전에, 대주교의 궁전과 오르디나리 궁전, "봄의 성 스테파노" 세례당 이렇게 세개의 주요 건물이 철거되었다.
+                    </p>
+                </div>
+            </div>
+
+            <div id = "box2" class = "box">
+                <img src = "/static/img/milan4.jpg" alt = "이미지2">
+
+                <div class = "msg">
+                    <h2>건축양식에 대해서</h2>
+
+
+                    <p>
+                        대성당을 중심으로 방사하는 도로와 대성당을 둘러싸는 도로들을 지닌 밀라노의 도시 배치는 이 대성당이 고대 로마 시대 도시의 중심부를 차지하고 있었음을 알 수 있다.
+                        성 암브로시오의 새로운 바실리카가 이 장소에 5세기 초에 지어졌으며 그 옆에 인접한 바실리카는 836년에 추가되었는데 
+                        두개의 바실리카는 1075년에 화재로 전소되었고 1386년 안토니오 다 살루초 대주교가
+                        이탈리아보다는 프랑스에서 보편적이었던 후기 고딕 양식인 라요낭트 양했다
+                    </p>
+                </div>
+            </div>
+
+            <div id = "box3" class = "box">
+                <img src = "/static/img/milan9.jpg" alt = "이미지2">
+
+                <div class = "msg">
+                    <h2>완공 당시</h2>
+
+                    <p class = "smallw">밀라노 대성당의 완공</p>
+
+                    <p>
+                        1389년 프랑스인 니콜라 드 보나방튀르가 대성당에 고딕 양식의 외관을 부여하였다.
+                        아직 대부분 미완성이었으나 펠레그리노는 기둥들과 오벨리스크들과 거대한 팀파눔이 있는 로마 양식의 외관을 설계하였다.
+                        펠레그리노의 설계안이 모습을 나타내었을 때는 정면 부분의 설계로 경쟁이 붙어 12개 정도의 설계안이 제출되었다.
+                        나폴레옹 이 이탈리아 왕에 즉위할 때 건물의 외관을 완성하도록 지시하였고 건축가는 이전의 계획안을 따라 신고딕 양식의 세부 장식을 위쪽 창들에 덧붙였다
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id = "explain">
+            <h2>밀라노의 다른 모습들</h2>
+
+            <div id = "explainImg">
+                <div class = "divide">
+
+                    <div class = "line">
+                        <img src = "/static/img/mill1.jpg">
+                    </div>
+
+                    <div class = "line">
+                        <img src = "/static/img/mill2.jpg">
+                    </div>
+
+                    <div class = "line">
+                        <img src = "/static/img/mill3.png">
+                    </div>
+
+                </div>
+                
+
+                <div class = "divide">
+
+                    <div class = "line">
+                        <img src = "/static/img/mill4.jpg">
+                    </div>
+
+                    <div class = "line">
+                        <img src = "/static/img/mill5.png">
+                    </div>
+
+                    <div class = "line">
+                        <img src = "/static/img/mill6.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>  <!--explain 끝-->
+
+
+        <div id = "exhibit">
+            <div id = "rectangle">
+                <h2>밀라노 사진전</h2>
+
+                <p>
+                    남쪽 벽에 있는 조각상 또한 완성되었고 칸돌리아 대리석의 색채를 잘 보여주고 있다.
+                </p>
+            </div>
+
+            <div id = "absoluteDiv">
+                <div class = "slide_wrapper">
+                    <ul class = "slides">
+                        <li><img src = "/static/img/milan7.jpg" alt = "이미지1"></li>
+                        <li><img src = "/static/img/milan10.png" alt = "이미지3"></li>
+                        <li><img src = "/static/img/milan12.jpg" alt = "이미지3"></li>
+                        <li><img src = "/static/img/milan9.jpg" alt = "이미지2"></li>
+                        <li><img src = "/static/img/milan11.jpg" alt = "이미지3"></li>
+                        <li><img src = "/static/img/milan3.jpg" alt = "이미지6"></li>
+                        <li><img src = "/static/img/milan8_17.jpg" alt = "이미지7"></li>
+                        <li><img src = "/static/img/milan5.jpg" alt = "이미지8"></li>
+                    </ul>
+                </div>
+            </div>
+            
+        <p class = "controls">
+            <span class = "prev">prev</span>
+            <span class = "next">next</span>
+        </p>
+
+
+    </div>
+    <%- include('footer.ejs')%>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+                integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="/static/js/nav.js"></script>
+    <script src ="/static/js/footer.js"></script>
+
+    <script src = "/static/js/florence.js"></script>
+</body>
+</html>

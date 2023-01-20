@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weater 팝업창-result</title>
+
+    <link rel = "stylesheet" href = "/static/css/pageWeather.css">
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+    <div id = "container">
+
+
+        <div id = "topPosit">
+
+
+            <!-- <div id = "citySelect">  도시 선택 바
+                <select id = "city">
+                    <option value = "seoul">서울</option>
+                    <option value = "busan">부산</option>
+                    <option value = "ulsan">울산</option>
+                    <option value = "ansan">안산</option>
+                    <option value = "gangnam">강남</option>
+                </select>
+    
+                <button id = "resultbtn">날씨보기</button>
+            </div> -->
+    
+    
+            <div id = "contents"> <!-- 셀렉트 바 옆에 내용들-->
+    
+                <div id = "cityNameDay">
+                    <!-- <h2 id = "cityName">Rome</h2> -->
+
+                    <div id = "citySelect">
+                        <select id = "city" class="form-select">
+                            <option value = "Rome">로마</option>
+                            <option value = "Milan">밀라노</option>
+                            <option value = "Napoli">나폴리</option>
+                            <option value = "Floence">피렌체</option>
+                            <option value = "Venice">베네치아</option>
+                            <option value = "La Spezia">라스페치아</option>
+                        </select>
+        
+                        <!--<button id = "resultbtn">날씨보기</button>-->
+                    </div>
+
+
+                    <p class = "cityDay">날짜</p>
+                </div>
+                
+    
+                <div id = "btnMaxMin">
+                    <button class = "btn btnMax">최고</button>
+                    <button class = "btn now">현재</button>
+                    <button class = "btn btnMin">최저</button>
+                </div>
+    
+                <div id = "weatherImg">
+                    <img src = "/static/img/snow.png" alt = "날씨아이콘">
+                </div>
+
+                <button id = "resultbtn" type="button" class="btn btn-info">날씨보기</button>
+
+            </div> <!--contents 끝-->
+        </div>
+        
+        <div id = "weatherInfo">
+
+            <div id = "twoTop" class = "two">
+                <div id = "weatherTemp">
+
+                    <img id = "sun" src = "/static/img/temp.png" width = "45px" height = "45px">
+    
+                    <div class = "boxTop">
+                        <p class = "tempMaxMinName">현재온도</p>
+                        <span id = "temp" class = "weatherposit"> </span>
+                    </div>
+                    
+                </div>
+    
+                <div id = "weatherHumidity">
+    
+                    <img class = "water" src = "/static/img/humidity.png" width = "45px;" height = "45px;">
+                    
+                    <div class = "boxTop left">
+                        <p>습도</p>
+                        <span id = "humidity" class = "weatherposit"> </span>
+                    </div>
+                
+                </div>
+            </div>
+
+
+
+
+            <div id = "TwoBottom" class=  "two">
+                <div id = "weatherWind">
+
+                    <img class = "water" src = "/static/img/wind.png">
+    
+                    <div class = "boxTop left">
+                        <p>바람</p>
+                        <span id = "wind" class = "weatherposit"></span>
+                    </div>
+                    
+                </div>
+    
+                <div id = "weatherCloud">
+    
+                    <img class = "water" src = "/static/img/cloud.png">
+    
+                    <div class = "boxTop left">
+                        <p>구름</p>
+                        <span id = "cloud" class = "weatherposit"></span>
+                    </div>
+
+                </div> 
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <script src = "/static/js/pageWeather.js"></script>
+</body>
+</html>

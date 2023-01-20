@@ -1,0 +1,650 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Katuri';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+/* 메인 화면 사진 */
+
+.mainPic {
+    width: 100%;
+    height: 72vh;
+}
+
+/* 사진 이후 박스 */
+
+.contentBox {
+    margin-bottom: 20vh;
+
+}
+
+/* 검색상자 */
+
+.serBox {
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 30vh;
+}
+
+#search-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+#search-form input {
+    text-align: center;
+    background: transparent;
+    color: black;
+    width: 65vw;
+    height: 8vh;
+    border-radius: 20px;
+    box-shadow: 0px -5px 4px #0002;
+    border-width: 0;
+    border-right: 0;
+    background-color: white;
+    outline: none;
+}
+
+.search-btn {
+    color: white;
+    float: right;
+    margin-left: 3vw;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px #1C6758;
+    background: #1C6758;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+}
+
+.search-icon {
+    font-size: 20px;
+}
+
+#search-form input:hover {
+    border-width: 0;
+    border-bottom: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.searchKeyBox {
+    width: 65vw;
+}
+
+.keywordBox {
+    position: absolute;
+    width: 65vw;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 5px 4px #0002;
+    border-radius: 0 0 20px 20px;
+    color: #0006;
+}
+
+/* 이미지3개 */
+
+#Imgthree {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 탭메뉴 및 버튼*/
+
+.tabMenu {
+    width: 90vw;
+    background-color: #EEEEEE;
+    margin: 20vh auto 20vh auto;
+}
+
+.subTabMenu {
+    width: 100%;
+    background-color: #FFC696;
+    border-radius: 0px 15px 15px 15px;
+    padding-bottom: 15vh;
+}
+
+/* 관광지.음식 순위 */
+
+.hidden {
+    display: none;
+}
+
+.tabGrims {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.themaGrim {
+    width: 21vw;
+    height: 28vh;
+    margin-top: 12vh;
+    border-radius: 5px;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.grimdiv {
+    position: relative;
+    cursor: pointer;
+}
+
+.tabGrimDesc {
+    top: 32vh;
+    position: absolute;
+    opacity: 0;
+    width: 21vw;
+    height: 28vh;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 2vh 1vw 2vh 1vw;
+    transition: all 0.6s ease-in-out;
+    color: #fff;
+    z-index: 100000;
+    font-family: 'KOTRAHOPE';
+    font-size: 1.2rem;
+}
+
+.tabGrimDesc::-webkit-scrollbar {
+    display: none;
+}
+
+.grimdiv:hover .tabGrimDesc {
+    opacity: 1;
+    animation: grimDesc 2s 1;
+    transform: translateY(-20vh);
+}
+
+@keyframes grimDesc {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-10vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-20vh);
+    }
+}
+
+.grimdiv:hover .themaGrim {
+    animation: grimHover 2s 1;
+    transform: rotateY(180deg);
+}
+
+
+@keyframes grimHover {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+.cliBtn {
+    background-color: #FFC696;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    font-size: 1.8rem;
+    padding: 7px 17px 3px 17px;
+    font-weight: bold;
+    color: white;
+    font-family: 'BMJUA';
+}
+
+.unCliBtn {
+    background-color: #EEEEEE;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: none;
+    font-size: 1.7rem;
+    font-family: 'BMJUA';
+}
+
+/* 심볼탭 */
+
+.simbolDiv {
+    height: 40vh;
+    margin-bottom: 20vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #EEEEEE;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.simbol {
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;
+    background-color: #1C6758;
+    margin-bottom: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+
+.simbol:nth-child(2n) {
+    margin-top: 55vh;
+}
+
+.simbol:hover {
+    animation-name: simbolAni;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes simbolAni {
+
+    0%, 100% {
+    }
+
+    20% {
+        transform: translate(-10px, 10px);
+    }
+
+    40% {
+        transform: translate(10px, 0px);
+    }
+
+    60% {
+        transform: translate(-10px, -10px);
+    }
+
+    80% {
+        transform: translate(0px, 10px);
+    }
+}
+
+/* 페스티벌 탭 */
+
+.fstvBox {
+    background-color: #FFC696;
+    height: 85vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5vw 0 5vw;
+    border-radius: 15px;
+}
+
+.fstvDiv {
+    position: relative;
+    height: 58vh;
+    width: 13vw;
+    background-color: beige;
+    margin-top: 19vh;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.fstvAni:hover {
+    transform: translateY(-50px);
+    transition-duration: 2s;
+    width: 14vw;
+}
+
+.opaciZero {
+    animation: opaciZeroAni 2s 1;
+}
+
+.fstvBtn {
+    position: absolute;
+    margin-top: 5vh;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    background-color: #63000040;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.fstvBtnClr {
+    background-color: #630000;
+}
+
+.fstvBtn-1 {
+    transform: translateX(-350%);
+}
+
+.fstvBtn-2 {
+    transform: translateX(-200%);
+}
+
+.fstvBtn-3 {
+    transform: translateX(-50%);
+}
+
+.fstvBtn-4 {
+    transform: translateX(100%);
+}
+
+.fstvBtn-5 {
+    transform: translateX(250%);
+}
+
+.fstvCli {
+    margin-top: 15vh;
+}
+
+.fstvAni:nth-child(6n+1) {
+    margin-top: 10vh;
+}
+
+.fstvImg {
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+    border-radius: 6px;
+}
+
+.fstvText {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Cafe24Ssurround';
+}
+
+.icons {
+    font-size: 35px;
+}
+
+.transIcon {
+    animation-name: icon;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.fstvDesc {
+    width: 60vw;
+    height: 58vh;
+}
+
+.width {
+    width: 14vw;
+}
+
+.fstvDescInner {
+    animation: fstvDescAni 1s;
+    background-color: #EEEBDD;
+    height: 58vh;
+    width: 60vw;
+    margin-top: 15vh;
+    margin-left: 3vw;
+    border-radius: 6px;
+    text-align: center;
+    padding: 0 5vw;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    font-family: 'KOTRAHOPE';
+}
+
+.fstvDescInner>div {
+    width: 100%;
+    height: 70%;
+    margin-top: 5vh 2vw 0 2vw;
+    overflow: scroll;
+}
+
+.fstvDescInner>div::-webkit-scrollbar {
+    display: none;
+}
+
+.fstvBack {
+    position: absolute;
+    margin-top: 0.3vh;
+    left: 1vw;
+    font-size: 50px;
+}
+
+.fstvBackHover {
+    transform: translateY(-50px);
+    transition-duration: 2s;
+}
+
+.fstvBack-2:hover {
+    transform: translateY(-50px);
+    transition-duration: 2s;
+}
+
+.fstvBack-2 {
+    animation: fstvBackAni 2s 1;
+    cursor: pointer;
+}
+
+@keyframes fstvBackAni {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* keyframes */
+/* icon 애니메이션 효과 */
+
+@keyframes icon {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes fstvDescAni {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes opaciZeroAni {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 미디어쿼리 */
+
+@media (max-width: 1200px) {
+    .simbolDiv {
+        height: 20vw;
+        margin-bottom: 25vw;
+        margin-top: 30vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        background-color: #EEEEEE;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .simbol {
+        width: 18vw;
+        height: 18vw;
+        margin-top: 5vw;
+    }
+
+    .simbol:nth-child(2n) {
+        margin-top: 15vw;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1030px) {
+    .subTabMenu {
+        padding-bottom: 5vh;
+        align-items: center;
+    }
+
+
+    .mainPic {
+        height: 60vh;
+    }
+
+    .mainBox {
+        width: 90%;
+    }
+
+    .tabGrims {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabMenu {
+        margin-bottom: 5vh;
+    }
+
+    .sinbolDiv {
+        height: 20vh;
+        margin-bottom: 0;
+    }
+
+    .themaGrim {
+        width: 65vw;
+        height: 50vw;
+        margin-top: 8vh;
+    }
+
+    .tabGrimDesc {
+        width: 65vw;
+        height: 50vw;
+        top: 28vh;
+    }
+
+    .fstvBox {
+        height: 98vh;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .width {
+        width: 100%
+    }
+
+    .fstvDiv {
+        width: 60vw;
+        height: 13vh;
+        margin: 2vh;
+    }
+
+    .fstvAni {
+        margin-top: 2vw;
+    }
+
+    .fstvAni:nth-child(6n+1) {
+        margin-top: 2vh;
+        margin-left: 15vw;
+    }
+
+    .fstvAni:hover {
+        transform: translateY(-1vw);
+        transition-duration: 2s;
+        width: 25vw;
+    }
+
+    .fstvText {
+        top: 2vh
+    }
+
+    .fstvBack {
+        margin-bottom: 93vh;
+    }
+
+    .fstvDescInner {
+        margin-top: 3vh;
+        margin-left: 0vw;
+    }
+
+    .fstvBtn {
+        margin-bottom: 88vh;
+        margin-left: 5vw;
+        width: 4vw;
+        height: 4vw;
+    }
+}

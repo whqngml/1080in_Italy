@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리뷰</title>
+    <!-- CDN Link (css) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <!-- ICON (css) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 파비콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/image/favicon-32x32.png"
+    />
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="/static/css/review.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+  </head>
+  <body>
+    <%- include('navbar.ejs')%>
+    <!-- 리뷰폼 시작 -->
+    <form class="wrap" name="review">
+      <div class="top">
+        <div class="outer">
+          <div class="comment">
+            <h2>리뷰를 작성해주세요!</h2>
+          </div>
+          <hr />
+          <div class="input">
+            <div class="nn">
+              <i class="bi bi-person-circle icon"></i>
+
+              <div class="ni">
+                <!-- 닉네임 -->
+                <input
+                  type="text"
+                  placeholder="nickname"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'nickname'"
+                  id="nickname"
+                />
+              </div>
+            </div>
+            <div class="rerabu">
+              <div class="re">
+                <!-- 리뷰작성 -->
+                <textarea
+                  id="review"
+                  cols="80"
+                  rows="3"
+                  placeholder="write a review"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'write a review'"
+                ></textarea>
+              </div>
+              <div class="rabu">
+                <!-- 별점 -->
+                <div class="rating">
+                  <div class="ratefill"></div>
+                  <!-- 해당 별점을 클릭하면 해당 별과 그 왼쪽의 모든 별의 체크박스에 checked 적용 -->
+                  <input
+                    type="checkbox"
+                    name="rating"
+                    id="rating1"
+                    value="1"
+                    class="rate_radio"
+                    title="1점"
+                  />
+                  <label for="rating1"></label>
+                  <input
+                    type="checkbox"
+                    name="rating"
+                    id="rating2"
+                    value="2"
+                    class="rate_radio"
+                    title="2점"
+                  />
+                  <label for="rating2"></label>
+                  <input
+                    type="checkbox"
+                    name="rating"
+                    id="rating3"
+                    value="3"
+                    class="rate_radio"
+                    title="3점"
+                  />
+                  <label for="rating3"></label>
+                  <input
+                    type="checkbox"
+                    name="rating"
+                    id="rating4"
+                    value="4"
+                    class="rate_radio"
+                    title="4점"
+                  />
+                  <label for="rating4"></label>
+                  <input
+                    type="checkbox"
+                    name="rating"
+                    id="rating5"
+                    value="5"
+                    class="rate_radio"
+                    title="5점"
+                  />
+                  <label for="rating5"></label>
+                </div>
+
+                <!-- 등록버튼 -->
+                <div class="bu">
+                  <button type="submit" class="enter">등록</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card3">
+          <div
+            id="carouselExampleControls"
+            class="carou carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/static/image/colosseum.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/florence.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/rome_center.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/rome.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/venice.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/trevi.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/emanuel.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/education.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/capri1.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/CinqueTerre1.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/milan2.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/static/image/pantheon2.jpg"
+                  class="reviewPic"
+                  alt="자연"
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span
+              >`
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <p class="card-text">사진들을 보며 좋았던 기억을 작성해 주세요!</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <!-- 리뷰 출력되는 부분 -->
+      <div class="list">
+        <!-- <div class="reviews">
+          <div class="left">
+            <div class="icon2"></div>
+            <div class="nickname"></div>
+          </div>
+          <div class="right">
+            <div class="textreview"></div>
+            <div class="side">
+              <div class="stars"></div>
+              <div class="bot"></div>
+                <div class="dates"></div>
+                <button class="deleteBtn"></div>
+            </div>
+          </div>
+        </div>  -->
+      </div>
+    </form>
+    <%- include('footer.ejs')%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/nav.js"></script>
+    <script src="/static/js/footer.js"></script>
+    <script src="/static/js/review.js"></script>
+  </body>
+</html>

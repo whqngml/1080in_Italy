@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>country</title>
+    <!-- CDN Link (css) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- ICON (css) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 파비콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/image/favicon-32x32.png"
+    />
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <link rel="stylesheet" href="/static/css/footer.css" />
+    <link rel="stylesheet" href="/static/css/country.css" />
+  </head>
+  <body>
+    <%- include('navbar.ejs')%>
+    <div id="contents">
+      <div id="video">
+        <video src="/static/image/italyintro.mp4" autoplay loop muted></video>
+      </div>
+
+      <div id="explain">
+        <div id="posit">
+          <img src="/static/image/italymap.png" alt="이탈리아지도" />
+          <div id="text">
+            <h2>이탈리아는 어떤 나라?</h2>
+            <p class="smallw">고대로마 문명의 중심지</p>
+            <p class="italyintro">
+              이탈리아공화국 약칭 이탈리아는 남유럽과 지중해의 반도에 위치한
+              공화국이다. 수도는 로마. 로마 제국의 중심지였던 국가라 고대 유럽
+              문화의 핵심이었고 라틴 문자의 발상지다. G20과 G7 참가국이다. GDP
+              8위의 국가이며 1인당 GDP는 25위이다. 국토 면적은 30만km2이며
+              지중해성 기후대에 속한다. 인구는 6,020만여 명으로 유럽에서 여섯
+              번째로 인구가 많다. 주요 도시로는 수도인 로마를 비롯하여 밀라노,
+              나폴리, 제노바, 피렌체, 토리노, 베네치아 등이 있다. 이탈리아는
+              1957년 유럽 공동체의 창립 회원국이었으며 통용화폐는 유로화이다.
+              유네스코 세계유산에 등록된 갯수는 세계에서도 압도적으로 많은
+              58개인데 이 부분에서 보여지듯 예술, 과학, 문화부분에서 오랜 전통과
+              함께 압도적인 영향력을 지니고 있다. 특산품으로는 올리브, 오렌지,
+              포도, 치즈 등이 있다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- explain 끝-->
+
+      <div id="threeBox">
+        <div id="box2" class="box">
+          <img src="/static/image/italyfont.png" alt="국호" />
+
+          <div class="msg">
+            <h2>이탈리아의 국호</h2>
+
+            <p>
+              공식국호는 이탈리아공화국이다. 원래 '이탈리아'라는 명칭은 이탈리
+              사람들이 살던 남부 지방에만 쓰였다. 로마 제국이 이곳을 지배하게
+              되면서 현 이탈리아의 북부 지방인 알파인 지역까지 포함한 반도
+              전체로 뜻이 확장되었고 로마 제국이 이탈리아 반도의 여러 부족들을
+              통칭하여 이탈리아인이라 표현하였다. 1861년에 사보이아 가문이
+              반도의 통일을 이루면서 국호로 이탈리아 왕국을 채택했다. 1948년에
+              공화국이 되어서도 이탈리아라는 국명을 유지하고 있다.
+            </p>
+          </div>
+        </div>
+        <div id="box3" class="box">
+          <img src="/static/image/flag.png" alt="국기" />
+
+          <div class="msg">
+            <h2>이탈리아의 국기</h2>
+
+            <p>
+              일 트리콜로레는 이탈리아의 국기로 초록, 하양, 빨강의 세로선으로 된
+              삼색기이다. 1848년에 처음 만들어졌고 2006년에 현재의 색상 톤으로
+              변경되었다. 초록, 하양, 빨강의 색깔의 유래는 삼림과 국토의 초록,
+              알프스의 눈과 평화의 하양, 애국과 열혈의 빨강으로 해석된다. 이
+              국기는 나폴레옹 보나파르트가 만들어준 것이다. 이 국가의 국기가
+              프랑스의 국기를 본따서 만든 초록, 하양, 빨강의 삼색기였다. 초록은
+              당시 밀라노 민병대의 제복 색깔이었고 하양, 빨강은 비스콘티 가문이
+              지배하던 시절 밀라노 공국의 국기에서 따왔다.
+            </p>
+          </div>
+        </div>
+        <div id="box4" class="box">
+          <img src="/static/image/tenor.jpg" alt="국가" />
+
+          <div class="msg">
+            <h2>이탈리아의 국가</h2>
+
+            <p>
+              마멜리 찬가는 이탈리아의 국가다. 공식 명칭은 '이탈리아인들의
+              노래'이다. 고프레도 마멜리의 시에 미켈레 노바로가 곡을 붙였다.
+              이탈리아 통일 직후에는 이 곡이 아니라 사보이아 가문의 '왕의
+              행진곡'이 공식 국가로 선포되었다. 그 후사실상 국가로 지정되었고
+              2005년에 이탈리아 헌법이 개정될 때 공식 국가로 공표되었다. 가사의
+              내용은 승리의 여신을 사로잡아 이탈리아에게 봉사하게 한다는
+              의미이다.
+            </p>
+          </div>
+        </div>
+        <a href="#">
+          <button>T O P</button>
+        </a>
+      </div>
+    </div>
+
+    <%- include('footer.ejs')%>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/27b083970c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/nav.js"></script>
+    <script src="/static/js/footer.js"></script>
+  </body>
+</html>

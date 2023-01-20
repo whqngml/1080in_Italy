@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.loginBtn {
+    font-family: 'twayair';
+    font-size: 1.5rem;
+    margin-left: 5vw;
+    color: white;
+}
+
+.logo {
+    width: 10vw;
+    height: 9vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.welcDiv {
+    font-family: 'Gamja Flower', cursive;
+    font-size: 2rem;
+    line-height: 96%;
+    text-align: center;
+}
+
+.growDiv1 {
+    flex-grow:1;
+}
+
+.growDiv2 {
+    flex-grow:8;
+}
+
+.growDiv3 {
+    flex-grow:1;
+    width: 17vw;
+}
+
+.naviMain {
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    width: 100%;
+    background-color: #FFC696;
+}
+
+.naviItemDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 글자색 */
+.navReview {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0px 0px 2px #1C6758;
+}
+
+a:hover {
+    color: #1C6758;
+  }
+
+.naviItem {
+    width: 12vw;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-family: 'twayair';
+}
+
+ul li {
+    list-style-type: none;
+    list-style: none;
+}
+
+a { text-decoration: none; color: black; cursor: pointer;}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover,a:active { text-decoration: none; }
+
+.naviHid {
+    position: absolute;
+    z-index: 4000;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.naviSubDiv {
+    display: flex;
+    /* justify-content: space-around; */
+    /* flex-direction: w; */
+    padding: 4vh 26vw 0 11vw;
+    width: 100%;
+    height: 22vh;
+    background-color: #F6F4E8;
+}
+
+.line {
+    border-left: thin solid  black;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.dropSub {
+    padding-left: 0;
+}
+
+.dropSub > li {
+    margin-bottom: 2vh;
+    font-size: 0.9rem;
+    width: 14vw;
+    text-align: center;
+    font-family: 'twayair';
+}
+
+.loginDropSub {
+    margin-left: 2vw;
+}
+
+.dropSubItem {
+    margin-top: 20vw;
+    
+}
+
+.navMQBtn {
+    display: none;      
+    font-size: 3rem;
+     
+}
+
+.navMQBack {
+    position: absolute;
+    left: 2vw;
+    top:0;
+    font-size: 2rem;
+}
+
+.navLogoDIv {
+    display: none;
+}
+
+.navLogoCenter {
+    height: 8vh;
+    width: 40vw;
+    margin-right: 16vw;
+    margin-left: 16vw;
+}
+
+.navMQmain {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 45vw;
+    height: 100vh;
+    background-color: #FF8886;
+    top: 0;
+    right: 0;
+    z-index: 10000000;
+    animation: navMQAni 1s 1;
+}
+
+@keyframes navMQAni {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 45vw;
+    }
+}
+
+.navMQLogo {
+    width: 60%;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 5vw;
+}
+
+.navMQItems {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+    background-color: aliceblue;
+    border-radius: 20px;    
+}
+
+.navMQItem {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column; 
+    width: 80%;
+    font-family: 'twayair';
+    font-size: 1.2rem;
+}
+
+.navMQSub {
+    margin-top: 2vh;  
+    background-color: #EAF6F6;
+    border-radius: 8px;
+}
+
+.navMQSub > div {
+    font-size: 0.8rem;
+    margin-bottom: 1.5vh;
+    margin-top: 0.9vh;
+    text-align: center;
+}
+
+input::placeholder {
+    font-family: 'MICEGothic Bold';
+    text-align: center;
+}
+
+@media (max-width: 1340px) {
+    .naviItem {
+        font-size: 1.2rem;
+        margin-left: 0;
+        margin-right: 0;
+        width: 14vw;
+    }
+
+    .naviItemDiv {
+        padding-right: 1vw;
+    }
+}
+
+@media (max-width: 1030px) {
+    .nicknameBox {
+       display: none;
+    }
+
+    .navLogoDIv {
+        display: block;
+        flex-grow: 8;
+    
+    }
+
+    .navMQBtn {
+        flex-grow: 1;
+        display: inline-block;
+    }
+
+    .naviItemDiv {
+        display: none;
+    }
+
+    .naviHid {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .navMQmain {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .navMQmain {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 1030px) {
+    .navMQmaster {
+        display: none;
+    }
+}

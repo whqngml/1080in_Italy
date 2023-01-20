@@ -1,0 +1,292 @@
+@font-face {
+  font-family: "MICEGothic Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MICEGothic Bold";
+}
+
+/* box */
+
+#threeBox .box {
+  margin: 0px 20px 200px 20px;
+  height: 400px;
+}
+
+#threeBox .box img {
+  width: 47%; /*부모요소의 45%*/
+  height: 100%;
+}
+
+.box .msg {
+  margin-left: 7%;
+  margin-top: 90px;
+  width: 40%;
+  height: 100%;
+}
+
+.box .msg .smallw {
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+/* box1 */
+
+#box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px 20px 50px 50px;
+  width: 90vw;
+  height: 60vh;
+}
+
+#box1 img {
+  width: 550px;
+  height: 400px;
+}
+
+#box1 #msg {
+  width: 50%;
+  margin-left: 30px;
+}
+
+#box1 h2 {
+  margin-left: 20px;
+}
+
+#box1 #msg .pFour {
+  display: flex;
+  flex-direction: column;
+}
+
+#box1 #msg .pFour p {
+  width: 50%;
+  margin: 10px 20px;
+  font-size: 17px;
+}
+
+#box1 #msg .pFour .twop {
+  display: flex;
+  
+  flex-direction: row;
+}
+
+#box1 #msg button {
+  width: 100px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* box2 */
+
+#box2 {
+  background: #3d8361;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#box2 .msg {
+  margin-right: 6%;
+  color: white;
+}
+
+#box2 .msg h2 {
+  font-weight: 700;
+  color: #f9bc6c;
+  text-shadow: 1px 1px #c64251;
+  margin-bottom: 1rem;
+}
+
+/* box3 */
+
+#box3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#box3 .msg {
+  margin-right: 6%;
+  /* color: white; */
+}
+
+#box3 .msg h2 {
+  margin-bottom: 1rem;
+}
+
+/* box4 */
+
+#box4 {
+  background: #3d8361;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#box4 .msg {
+  margin-right: 6%;
+  color: white;
+}
+
+#box4 .msg h2 {
+  font-weight: 700;
+  color: #f9bc6c;
+  text-shadow: 1px 1px #c64251;
+  margin-bottom: 1rem;
+}
+
+/* box5 */
+
+#box5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#box5 .msg {
+  margin-right: 6%;
+}
+
+#box5 .msg h2 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+/* 디저트 */
+
+#infoThree {
+  background: #3d8361;
+  padding: 30px;
+  padding-bottom: 50px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+#infoThree h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #f9bc6c;
+  text-shadow: 1px 1px #c64251;
+}
+
+#infoThree #infoImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#infoThree #infoImg .card {
+  margin: 10px 40px;
+  border: 1px solid black;
+}
+
+#infoThree #infoImg img {
+  /* width: 17.9rem; */
+  height: 180px;
+}
+
+#contents button {
+  font-weight: bold;
+  margin-left: 47%;
+  background: #3d8361;
+  width: 100px;
+  border: 2px solid #3d8361;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border-width: 0;
+  color: white;
+}
+
+/* 미디어쿼리 */
+
+@media (max-width: 1060px) {
+  #box1 {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    width: auto;
+    height: auto;
+  }
+
+  #box1 #msg {
+    margin-left: 10px;
+  }
+
+  #box1 h2 {
+    margin-top: 20px;
+  }
+
+  .box .msg {
+    margin-top: 25px;
+  }
+
+  #threeBox .box .msg {
+    height: 350px;
+  }
+
+  #box2 {
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+  }
+
+  #box2 .msg {
+    background-color: #3d8361;
+    margin: 0;
+    width: 47%;
+    padding: 35px 25px 0 25px;
+  }
+
+  #box3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #box4 {
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+  }
+
+  #box4 .msg {
+    background-color: #3d8361;
+    margin: 0;
+    width: 47%;
+    padding: 35px 25px 0 25px;
+  }
+
+  #box5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #threeBox .box {
+    height: auto;
+  }
+}
+
+/* 미디어쿼리2 */
+
+@media (max-width: 1008px) {
+  #infoThree #infoImg {
+    flex-direction: column;
+    align-items: center;
+  }
+}

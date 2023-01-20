@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticketting</title>
+
+    <!-- //제이쿼리 ui css -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/static/css/ticket.css">
+
+    <!-- 아이콘 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="travelAll">
+        <form class="travelForm">
+            <div class="travelSub">
+                <div class="travelPlace">
+                    <select id="startPoint" class="form-select" disabled>
+                        <option value="SEL" selected>서울</option>
+                        <option value="ICN">인천</option>
+                        <option value="GMP">김포</option>
+                    </select>
+                    <div>
+                        <i class="bi bi-airplane airplaneIcon"></i>
+                    </div>
+                    <select id="desti" class="desti form-select">
+                        <option value="FCO">로마</option>
+                        <option value="VCE">베니스</option>
+                        <option value="LIN">밀라노</option>
+                    </select>
+                </div>
+                <div class="travelDate">
+                    <input type="text" id="startDate">
+
+                    <input type="text" id="endDate">
+                </div>
+                <div class="travelNum">
+                    <label>성인(만12세 이상) : <input type="number" id="adult" min="0" value="1" />명</label>
+                    <label>소아(만12세 미만) : <input type="number" id="child" min="0" value="0" />명</label>
+                    <label>유아(24개월 미만) : <input type="number" id="infant" min="0" value="0" />명</label>
+                </div>
+                <div class="seatType">
+                    <select class="fareType" id="fareType">
+                        <option value="Y">일반석</option>
+                        <option value="P">프리미엄 일반석</option>
+                        <option value="C">비즈니스석</option>
+                        <option value="F">일등석</option>
+                    </select>
+                    <input id="direct" name="isDirect" type="checkbox">
+                    <label for="direct">직항만</label>
+                </div>
+                <button class="ticketBtn btn-3 custom-btn"><span>항공권 검색</span></button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="/static/js/util.js"></script>
+<script src="/static/js/ticket.js"></script>
+
+</html>

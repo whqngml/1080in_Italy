@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피렌체</title>
+
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+
+    <link rel = "stylesheet" href = "/static/css/florence.css">
+   
+</head>
+<body>
+    <%- include('navbar.ejs')%>
+
+    <div id = "contents">
+
+        <div id = "bigImg">
+            <img src = "/static/img/florence1.jpg">
+        </div>
+
+        <div id = "btn4">
+            <a href = "#box1"><span>피렌체 대성당</span></a>
+            <a href = "#box2"><span>돔에 대해서</span></a>
+            <a href = "#box3"><span>르네상스 시대의 작품</span></a>
+            <a href = "#explain"><span>피렌체의 다른 모습들</span></a>
+            <a href = "#exhibit"><span>피렌체 사진전</span></a>
+        </div>
+
+        <div id = "threeBox">
+
+            <div id = "box1" class = "box">
+                <img src = "/static/img/florence4.jpg" alt = "이미지1">
+
+                <div class = "msg">
+                    <h2>피렌체 대성당</h2>
+
+                    <p class = "smallw">이탈리아 중부 토스카나주의 주도</p>
+
+                    <p>
+                       피렌체 대성당은 이탈리아 피렌체이 있는 대성당이다.<br>
+                       정식 명칭은 꽃의 성모 마리아라는 뜻의 '<strong>산타 마리아 델 피오레 대성당</strong>'이다.<br>
+                       1296년에 건축을 시작한 이 프로젝트는 140여년 간 계속되었으며 여러 새대동안 수많은 건축가들이 참여하였다.
+                    </p>
+                </div>
+            </div>
+
+            <div id = "box2" class = "box">
+                <img src = "/static/img/florence3.jpg" alt = "이미지2">
+
+                <div class = "msg">
+                    <h2>돔에 대해서</h2>
+
+                    <p class = "smallw">피렌체 내부의 모습</p>
+
+                    <p>
+                        대성당의 백미라 할 수 있는 돔은 필리포 브루넬레스키가 설계하여 1436년에 완공되었다.
+                        이 돔은 역사상 최초의 팔각형 돔으로 목재 지지구조 없이 지어졌고 그 당시 가장 거대한 돔으로 오늘날에도 세계에서 가장 큰 석재 돔이다.
+                        그는 이 돔을 만들기 위해 돔의 기초에 나무와 철의세트로 된 수평으로 팽행한 사슬을 만들었고
+                        이 거대한 구조물의 무게는 37,000톤으로 4백만 개 이상의 벽돌이 사용되었다.
+                    </p>
+                </div>
+            </div>
+
+            <div id = "box3" class = "box">
+                <img src = "/static/img/florence2.jpg" alt = "이미지2">
+
+                <div class = "msg">
+                    <h2>르네상스 시대의 작품</h2>
+
+                    <p class = "smallw">르네상스 시대의 고딕작품</p>
+
+                    <p>
+                        피렌체 대성당은 르네상스 시대의 가장 인상적인 프로젝트들 가운데 하나로 손꼽힌다.
+                        피렌체 대성당의 전면부는 여러 예술가의 예술을 집대성하였으며
+                        하얀색과 초록색 그리고 붉은색의 대리석으로 된 이 고딕 양식의 전면으로 대성당과 종탑 그리고 세례당이 조화로운 전체를 이루고 있다.<br>
+                        성당의 정문인 세 개의 거대한 청동 문은 성모 마리아의 삶에서 따온 장면들로 장식되어 있다.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id = "explain">
+            <h2>피렌체의 다른 모습들</h2>
+
+            <div id = "explainImg">
+                <div class = "divide">
+
+                    <div class = "line">
+                        <img src = "/static/img/firen1.jpg">
+                    </div>
+
+                    <div class = "line">
+                        <img src = "/static/img/firen2.jpg">
+                    </div>
+
+                    <div class = "line">
+                        <img src = "/static/img/firen3.jpg">
+                    </div>
+
+                </div>
+                
+
+                <div class = "divide">
+
+                    <div class = "line">
+                        <img src = "/static/img/firen4.jpg">
+                    </div>
+
+                    <div class = "line">
+                        <img src = "/static/img/firen5.jpg">
+                    </div>
+
+                    <div class = "line">
+                        <img src = "/static/img/firen6.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>  <!--explain 끝-->
+
+
+        <div id = "exhibit">
+            <div id = "rectangle">
+                <h2>피렌체 사진전</h2>
+
+                <p>
+                    실외는 하얀색으로 윤곽선을 두른<br> 초록색과 분홍색의 대리석 판으로 마감되어 매우 아름답다.
+                </p>
+            </div>
+
+            <div id = "absoluteDiv">
+                <div class = "slide_wrapper">
+                    <ul class = "slides">
+                        <li><img src = "/static/img/florence7.webp" alt = "이미지1"></li>
+                        <li><img src = "/static/img/florence10.jpg" alt = "이미지2"></li>
+                        <li><img src = "/static/img/florence6.jpg" alt = "이미지2"></li>
+                        <li><img src = "/static/img/florence5.jpg" alt = "이미지2"></li>
+                        <li><img src = "/static/img/florence9.jpg" alt = "이미지2"></li>
+                        <li><img src = "/static/img/florence8.jpg" alt = "이미지2"></li>
+                        <li><img src = "/static/img/florence2.jpg" alt = "이미지2"></li>
+                        <li><img src = "/static/img/florence1.jpg" alt = "이미지2"></li>
+                    </ul>
+                </div>
+            </div>
+            
+        <p class = "controls">
+            <span class = "prev">prev</span>
+            <span class = "next">next</span>
+        </p>
+
+
+    </div>
+    <%- include('footer.ejs')%>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+                integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="/static/js/nav.js"></script>
+    <script src ="/static/js/footer.js"></script>
+
+    <script src = "/static/js/florence.js"></script>
+</body>
+</html>

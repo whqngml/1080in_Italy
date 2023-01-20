@@ -1,0 +1,15 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "이탈리아를 여행할 계획이 있는 사람들에게 이탈리아에 대해 소개하는 웹 페이지",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "1080 in Italy (김영훈 김예나 조부희)",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}

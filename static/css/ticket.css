@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'twayair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+select {
+  -webkit-appearance: none;
+  /* 크롬 화살표 없애기 */
+  -moz-appearance: none;
+  /* 파이어폭스 화살표 없애기 */
+  appearance: none;
+  /* 화살표 없애기 */
+  border: 0;
+  border-radius: 0;
+}
+
+body {
+  background-image: url(/static/image/ticketBackImg.png);
+  background-size: cover;
+  background-size: 450px 450px;
+  background-repeat: no-repeat;
+}
+
+.travelForm {
+  width: 350px;
+  height: 350px;
+}
+
+.travelAll {
+  width: 340px;
+  height: 370px;
+  background-color: rgb(255, 255, 255, 0.8);
+  margin: 30px auto 0 auto;
+  border-radius: 10px;
+}
+
+.travelSub {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.airplaneIcon {
+  font-size: 1.6rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.travelPlace {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  font-family: 'twayair';
+}
+
+#desti {
+  font-size: 1.2rem;
+  width: 110px;
+  background-color: white;
+}
+
+#startPoint {
+  font-size: 1.2rem;
+  width: 110px;
+  background-color: white;
+}
+
+#startDate {
+  width: 124px;
+}
+
+#endDate {
+  width: 124px;
+}
+
+.ui-datepicker-trigger {
+  position: relative;
+  top: -3px;
+  right: 30px;
+  width: 20px;
+}
+
+.travelDate {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-family: 'twayair';
+}
+
+.hidden {
+  display: none;
+}
+
+.travelNum {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255, 0.4);
+  padding: 10px;
+  font-family: 'twayair';
+}
+
+.travelNum input {
+  width: 40px;
+}
+
+.fareType {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.directDiv {
+  margin-bottom: 10px;
+}
+
+#fareType {
+  font-size: 1rem;
+  width: 120px;
+  font-family: 'twayair';
+}
+
+.seatType {
+  margin-bottom: 10px;
+  font-family: 'twayair';
+}
+
+/* 로그인 버튼 */
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+
+.btn-3 {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-3:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn-3:hover:before {
+  height: 100%;
+}
+
+.btn-3:hover:after {
+  width: 100%;
+}
+
+.btn-3 span:hover {
+  color: rgba(2, 126, 251, 1);
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-3 span:hover:before {
+  height: 100%;
+}
+
+.btn-3 span:hover:after {
+  width: 100%;
+}

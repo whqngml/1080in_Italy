@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>환율 API-result</title>
+
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/Popup.css">
+
+</head>
+
+<body>
+  <div id="container">
+    <h1>환율 계산</h1>
+
+    <div id="firstbox" class="box">
+      <p>기준 통화 </p>
+      <select id="selectCountry" class="form-select">
+        <option value="KRW" selected>한국</option>
+        <option value = "EUR">이탈리아</option>
+        <option value="USD">미국</option>
+        <option value="JPY">일본</option>
+        <option value = "CNY">중국</option>
+        <option value = "RUB">러시아</option>
+      </select>
+    </div>
+
+    <div id="secondbox" class="box">
+      <p>변환 통화 </p>
+      <select id="seeCountry" class="form-select">
+        <option value = "EUR" selected>이탈리아</option>
+        <option value="KRW">한국</option>
+        <option value="USD">미국</option>
+        <option value="JPY">일본</option>
+        <option value = "CNY">중국</option>
+        <option value = "RUB">러시아</option>
+      </select>
+    </div>
+
+    <div id="thirdbox" class="box">
+      <label for="amount">기준 금액 </label>
+      <input id="amount" name="amount" type="text" placeholder="금액을 입력해주세요.">
+      <!--사용자가 입력할 돈의 양-->
+
+
+    </div>
+    <div id="fourthbox"class="box hidden">
+      <label for="rate">환전 금액 </label>
+      <input id="rateDiv" name="rate" type="text">
+    </div>
+    <button type="button" id="swapBtn" class="swapButton btn">환전</button>
+
+
+    <div id="fourthbox">
+
+      <div id="rateDiv">
+        <!--환율 정보를 표시할 div 태그-->
+        <!-- 환율정보 -->
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+  <script src="/static/js/Popup.js"></script>
+
+
+</body>
+
+</html>

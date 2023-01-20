@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+body {
+    font-family: 'MICEGothic Bold';
+}
+
+/* contents */
+
+#bigImg {
+    width: 100%;
+    height: 78vh;
+}
+
+#bigImg img {
+    width: 100%;
+    height: 100%;
+}
+
+#btn4 {
+    background: #1C6758;
+    width: 100%;
+    height: 8.5vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#btn4 span {
+    color: white;
+}
+
+
+/* box */
+#threeBox {
+    width: 100%;
+}
+
+.box {
+    margin: 0 20px 0 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#box2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#threeBox .box img {
+    width: 47%;
+    /*부모요소의 45%*/
+    height: 300px;
+}
+
+.box .msg {
+    margin-left: 7%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 40%;
+}
+
+#threeBox .box .msg h2,
+#threeBox #box2 .msg h2 {
+    font-weight: 700;
+}
+
+#threeBox .box .msg p,
+#threeBox #box2 .msg p {
+    font-size: 1rem;
+    ;
+}
+
+#box2 .msg {
+    margin-right: 6%;
+    margin-bottom: 30px;
+}
+
+#threeBox .box .msg .smallw {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* explain */
+
+#explain {
+    margin-bottom: 130px;
+}
+
+#explain>h2 {
+    font-weight: 700;
+    margin-top: 120px;
+    /*위에 box와 exhibit간의 간격*/
+    text-align: center;
+    font-weight: 700;
+}
+
+#explain #explainImg p {
+    font-size: 1rem;
+}
+
+#explain #explainImg .line {
+    width: 250px;
+    height: 170px;
+    border: 1px solid black;
+    background-color: #D6CDA4;
+}
+
+#explain #explainImg .line img {
+    width: 100%;
+    height: 100%;
+}
+
+#explain #explainImg .divide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    width: 100%;
+    height: 50%;
+}
+
+#explain #explainImg .divide div {
+    margin: 0 10px;
+}
+
+#explain #explainImg .divide div p {
+    text-align: center;
+}
+
+/* exhibit */
+
+#exhibit {
+    position: relative;
+    /*부모요소로서 자식요소는 exhibitImg*/
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+#exhibit #rectangle {
+    background: #3D8361;
+    width: 50%;
+    height: 330px;
+}
+
+#exhibit #rectangle h2 {
+    color: #E8AA42;
+    font-weight: 900;
+    margin-left: 20%;
+    padding-top: 80px;
+}
+
+#exhibit #rectangle .smallletter {
+    font-size: 10px;
+    margin-left: 20%;
+}
+
+#exhibit #rectangle p {
+    width: 300px;
+    color: white;
+    margin-left: 20%;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#exhibit #exhibitImg img {
+    width: 350px;
+    height: 250px;
+}
+
+#exhibit #exhibitImg .img1 {
+    position: absolute;
+    bottom: 57px;
+    left: 35%;
+}
+
+#exhibit #exhibitImg .img2 {
+    position: absolute;
+    bottom: 57px;
+    left: 880px;
+}
+
+#exhibit #exhibitImg .img3 {
+    position: absolute;
+    bottom: 57px;
+    left: 1245px;
+}
+
+#absoluteDiv {
+    position: absolute;
+    /* bottom: 57px; */
+    top: 35px;
+    left: 35%;
+}
+
+.slide_wrapper {
+    position: relative;
+    width: 1110px;
+    margin: 0 auto;
+    height: 250px;
+    overflow: hidden;
+}
+
+.slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 0.5s ease-out;
+}
+
+.slides li:not(:last-child) {
+    /*끝에는 만들 필요X=> 막내뺴고 나머지 li들은 float걸어서 가로배열함 */
+    float: left;
+    margin-right: 30px;
+}
+
+.slides img {
+    width: 350px;
+    height: 250px;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls span.prev {
+    right: calc(100% + 50px);
+}
+
+.controls span.next {
+    left: calc()
+}
+
+#box1:target h2 {
+    font-weight: 700;
+    color: #f9bc6c;
+    text-shadow: 1px 1px #C64251;
+}
+
+#box2:target h2 {
+    font-weight: 700;
+    color: #f9bc6c;
+    text-shadow: 1px 1px #C64251;
+}
+
+#box3:target h2 {
+    font-weight: 700;
+    color: #f9bc6c;
+    text-shadow: 1px 1px #C64251;
+}
+
+#explain:target h2 {
+    font-weight: 700;
+
+    color: #f9bc6c;
+    text-shadow: 1px 1px #C64251;
+}
+
+#exhibit:target h2 {
+    font-weight: 700;
+    color: #f9bc6c;
+    text-shadow: 1px 1px #C64251;
+}
+
+/* media query */
+@media (max-width: 666px) {
+    .box,
+    #box2 {
+        flex-direction: column;
+    }
+
+    #threeBox .box img {
+        width: 100%;
+    }
+
+    .box .msg,
+    #box2 .msg {
+        margin: 35px auto;
+        width: 80%;
+    }
+
+    #exhibit #rectangle {
+        width: 100%;
+        height: 500px;
+        text-align: center;
+    }
+
+    #exhibit #rectangle h2 {
+        margin-left: 3%;
+    }
+
+    #exhibit #rectangle .smallletter {
+        margin: 0 auto;
+    }
+
+    #exhibit #rectangle p {
+        margin: 0 auto;
+    }
+
+    .slide_wrapper {
+        width: 380px;
+    }
+
+    #absoluteDiv {
+        position: absolute;
+        top: 40%;
+        left: 13%;
+        right: 13%;
+    }
+}
+
+@media (min-width: 667px) and (max-width: 1115px) {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    #exhibit #rectangle {
+        width: 100%;
+        height: 330px;
+    }
+
+    #exhibit #rectangle h2,
+    #exhibit #rectangle .smallletter,
+    #exhibit #rectangle p {
+        display: none;
+    }
+
+    #exhibit {
+        position: relative;
+        /*부모요소로서 자식요소는 exhibitImg*/
+        margin-bottom: 100px;
+        overflow: hidden;
+    }
+
+    #exhibit #rectangle {
+        width: 100%;
+        height: 330px;
+    }
+
+    #absoluteDiv {
+        position: absolute;
+        /* bottom: 57px; */
+        top: 0px;
+        left: 0%;
+    }
+
+    .slide_wrapper {
+        position: relative;
+        width: 1110px;
+        margin: 0 auto;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .slides {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: left 0.5s ease-out;
+    }
+
+    #absoluteDiv {
+        position: absolute;
+        top: 35px;
+        left: 0%;
+
+        margin: auto 0;
+    }
+
+    .slides img {
+        width: 340px;
+        height: 250px;
+    }
+}

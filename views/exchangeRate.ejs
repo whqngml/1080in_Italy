@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>환율 API</title>
+
+
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
+    <div id = "container">
+        <h1>API</h1>
+
+        <!--select 태그-option : 클릭했을 떄의 드롭다운이 활성화-->
+        <div id = "userWant">
+            <select id = "selectCountry"> <!--사용자가 원하는 통화를 선택-->
+              <option value = "USD">미국</option>
+              <option value = "KRW">한국</option>
+              <option value = "JPY">일본</option>
+            </select>
+    
+            <label for = "amount">돈 입력</label> <!--사용자가 입력할 돈의 양-->
+            <input id = "amount" name = "amount" type = "text"> <!--사용자가 입력할 돈의 양-->
+    
+        </div>
+
+        <div id = "userKnow">
+
+            <select id = "seeCountry"><!--바꾸려는 통화 선택-->
+                <option value = "Euro" selected>이탈리아</option>
+                <option value = "KRW">한국</option>
+                <option value = "USD">미국</option>
+                <option value = "JPY">일본</option>
+            </select>
+        </div>
+
+        <button class = "swapButton">환율보기</button> <!--교환-->
+
+        <div id = "rateDiv"> <!--환율정보를 표시할 div 태그-->
+            환율정보
+        </div>
+        
+
+
+    </div>
+    
+    <script src = "/static/js/exchangeRate.js"></script>
+  </body>
+</html>

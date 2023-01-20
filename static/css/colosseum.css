@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+body{
+    font-family: 'MICEGothic Bold';
+}
+
+/* contents */
+
+#bigImg{
+    width : 100%;
+    height: 78vh;
+}
+
+#bigImg img{
+    width : 100%;
+    height: 100%;
+}
+
+#btn4{
+    background : #1C6758;
+    width : 100%;
+    height : 8.5vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#btn4 span{
+    color: white;
+}
+
+#btn4 span:hover{
+    color: red;
+}
+
+/* box */
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+#box2{
+    background: #3D8361;
+    display : flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom : 40px;
+}
+
+#threeBox .box img{
+    width : 47%; /*부모요소의 45%*/
+    height : 300px;
+}
+
+.box .msg{
+    margin: auto 0;
+    margin-left : 7%;
+    /* margin-top : 20px; */
+    width : 40%;
+}
+
+#box2 .msg{
+    /*margin-right : 6%;*/
+    color : white;
+}
+
+.box .msg .smallw{
+    font-size: 10px;
+    margin: 10px 0;
+}
+
+/* explain */
+
+#explain{
+    margin-bottom: 30px;
+}
+
+#explain h2{
+    text-align : center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+#explain #posit{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#explain #posit #text p{
+    text-align: center;
+}
+
+#explain #posit #text{
+    margin-top : 30px; /*글씨위치*/
+}
+
+#explain #posit #text button{
+    margin-left : 140px;
+    background: #f9bc6c;
+    width : 100px;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 4px 4px;
+    color: white;
+}
+
+#explain img{
+    width: 400px;
+    height : 300px;
+    margin-bottom: 80px;
+    margin-left : 70px;
+}
+
+/* infoThree */
+#infoThree{
+    background: #3D8361;
+    padding: 30px;
+    padding-bottom : 50px;
+    margin-bottom: 80px;
+}
+
+#infoThree h2{
+    text-align : center;
+    margin-bottom : 50px;
+    color: #f9bc6c;
+    text-shadow: 1px 1px #c64251;
+    font-weight: 700;
+}
+
+#infoThree #infoImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#infoThree #infoImg .card{
+    width: 18rem;
+    margin: 10px 40px;
+    border: 1px solid black;
+}
+
+#infoThree #infoImg img{
+    width: 100%;
+    height : 180px;
+}
+
+#box1:target h2{
+    font-weight: 700;
+}
+
+#box2:target h2{
+    font-weight: 700;
+}
+
+#explain:target h2{
+    font-weight: 700;
+}
+
+#infoThree:target h2{
+    font-weight: 700;
+}
+
+@media (max-width: 666px){
+    .box, #box2{
+        flex-direction: column;
+    }
+
+    #threeBox .box img{
+        width : 100%;
+    }
+
+    .box .msg, #box2 .msg{
+        margin: 35px auto;
+        width : 80%;
+    }
+
+    #infoThree #infoImg{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #infoThree #infoImg .card{
+        margin: 20px 0px;
+        border: 1px solid black;
+        width: 22rem;
+    }
+
+    #explain img{
+        margin-bottom: 30px;
+        margin-left : 0px;
+    }
+
+    #explain #posit{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #infoThree #infoImg .card{
+        margin: 10px 40px;
+        border: 1px solid black;
+    }
+}

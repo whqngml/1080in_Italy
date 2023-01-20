@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포로로마노</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+      <link rel="stylesheet" href="/static/css/navbar.css">
+      <link rel="stylesheet" href="/static/css/footer.css">
+
+
+    <link rel = "stylesheet" href = "/static/css/colosseum.css">
+</head>
+<body>
+    <%- include('navbar.ejs')%>
+
+    <div id = "contents">
+
+        <div id = "bigImg">
+            <img src = "/static/img/fororomano1.jpg">
+        </div>
+
+        <div id = "btn4">
+            <a href = "#box1"><span>포로로마노의 형태</span></a>
+            <a href = "#box2"><span>포로로마노의 위치</span></a>
+            <a href = "#explain"><span>과거의 포로로마노</span></a>
+            <a href = "#infoThree"><span>로마제국의 상징</span></a>
+        </div>
+
+        <div id = "threeBox">
+
+            <div id = "box1" class = "box">
+                <img src = "/static/img/fororomano2.jpg" alt = "이미지1">
+
+                <div class = "msg">
+                    <h2>포로로마노의 형태</h2>
+
+
+                    <p>
+                        포로 로마노은 고대 로마 시대의 유적지이며 로마 구도심 한가운데 있다. 
+                        포로 로마노는 주요 정부 기관 건물들이 직사각형 모양의 광장을 감싼 형태이고 많은 유적들이 증명하듯 로마 정치와 경제의 중심지였다. 
+                        이곳에서 개선식, 공공 연설, 선거, 심지어는 검투사 경기까지 국가의 중대 행사를 열었다
+                    </p>
+                </div>
+            </div>
+
+            <div id = "box2" class = "box">
+                <img src = "/static/img/fororomano3.png" alt = "이미지2">
+
+                <div class = "msg">
+                    <h2>포로로마노의 위치</h2>
+
+
+                    <p>
+                        팔라티노 언덕과 캄피돌리오 언덕 사이 있다. 현재 어느 정도 발굴을 진행했고 연간 450만 명 관광객이 방문한다. 
+                        고대 로마의 가장 중요한 건축물 대부분이 포로 로마노에 있었다. 
+                        로마에 세운 최초 사원과 신전 그리고 왕궁까지 이 곳에 있었고 포로 로마노의 건물들은 전체적으로 로마 제정 시기에 크게 확장했다.
+                        유적 동남쪽에는 로마 공화정 시기 의회장이 있었다. 
+                    </p>
+                </div>
+            </div>
+
+        </div> <!--threeBox 끝-->
+
+        <div id = "explain">
+
+            <h2>과거의 포로로마노</h2>
+            
+            <div id = "posit">
+                <div id = "text">
+                    <p>트라야누스 황제 시기이자 포로로마노의</p>
+                    <p>최고 전성기 시절의 모습을 복원한 그림이다</p>
+                    <p>맨 위의 황금빛 지붕 건물은 최고신 유피테르를 모시는</p>
+                    <p>유피테르 신전으로, 로마에서 가장 높은 언덕인 카피톨리노 언덕 위에 있었다</p>
+                    <p>재는 로마 시청사가 이 곳에 세워져 있다.</p>
+                    <p>대영 박물관에 보관되어 있다.</p>
+
+                    <a href = "https://ko.wikipedia.org/wiki/%ED%8F%AC%EB%A3%B8_%EB%A1%9C%EB%A7%88%EB%88%94" target = "_blank">
+                        <button class = "yellowbtn" style = "margin-left: 220px;">자세히 보기</button>
+                    </a>
+                </div>
+                
+    
+                <img src = "/static/img/fororo3.jpg" alt = "사진1">
+            </div>
+        </div> <!-- explain 끝-->
+
+        
+        <div id = "infoThree">
+            <h2>로마제국의 상징, 포로로마노</h2>
+            <div id = "infoImg">
+
+
+                <div class="card card1">
+                    <img src="/static/img/fororo1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">율리우스 카이사르 시기 탈바꿈하게 되었는데 그는 포룸 한복판에 율리우스 바실리카를 짓고 그곳으로 원로원 회의장과 재판장을 옮겼다.</p>
+                    </div>
+                  </div>
+
+                  <div class="card card2">
+                    <img src="/static/img/fororo2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">제정 시대에는 포로로마노에서 처리하고 있던 경제적 업무는 대부분 트라야누스 포룸 같이 조금 더 거대한 건물로 옮겼다.  </p>
+                    </div>
+                  </div>
+
+
+                  <div class="card card3">
+                    <img src="/static/img/fororomano2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">하지만 포로로마노의 정치적 중요함과 상징성은 퇴색하지 않았고 그 후에도 여전히 로마 제국의 상징처럼 여겼다..</p>
+                    </div>
+                  </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <%- include('footer.ejs')%>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+                integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="/static/js/nav.js"></script>
+    <script src ="/static/js/footer.js"></script>
+    
+    <script src = "/static/js/colosseum.js"></script>
+</body>
+</html>
